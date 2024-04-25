@@ -31,7 +31,9 @@ function App() {
     }
   };
 
-  const handleKeyDownEvent = (event: KeyboardEvent, character: ICharacter) => {
+  // TO DO: Change event type
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleKeyDownEvent = (event: any, character: ICharacter) => {
     if (event.key === "Enter") {
       handleCharacterSelect(character);
     }
